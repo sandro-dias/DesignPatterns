@@ -1,6 +1,6 @@
 ﻿namespace DesignPatterns.Behavioral.Strategy
 {
-    public class Context
+    public class StrategyClient
     {
         ///<summary>
         /// A ideia por trás do Strategy é definir uma interface com um método
@@ -13,9 +13,9 @@
         
         private IStrategy? _strategy;
 
-        public Context() { }
+        public StrategyClient() { }
 
-        public Context(IStrategy strategy)
+        public StrategyClient(IStrategy strategy)
         {
             _strategy = strategy;
         }
@@ -68,7 +68,7 @@
     {
         public void Main()
         {
-            var context = new Context();
+            var context = new StrategyClient();
 
             context.SetStrategy(new PaymentByCreditCard());
             context.DoSomeBusinessLogic();
