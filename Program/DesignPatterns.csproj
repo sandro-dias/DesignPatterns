@@ -12,7 +12,6 @@
     <Folder Include="Creational\Builder\" />
     <Folder Include="Creational\Prototype\" />
     <Folder Include="Creational\Singleton\" />
-    <Folder Include="Structural\" />
   </ItemGroup>
 
 </Project>
